@@ -16,3 +16,6 @@ package-install:
 	source .venv/bin/activate
 	python3 -m pipx install dist/*.whl
 	deactivate
+
+lint:
+	poetry run flake8 brain_games
